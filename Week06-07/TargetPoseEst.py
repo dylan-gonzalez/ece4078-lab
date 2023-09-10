@@ -6,11 +6,10 @@ import ast
 import cv2
 from YOLO.detector import Detector
 
-
 # list of target fruits and vegs types
 # Make sure the names are the same as the ones used in your YOLO model
 TARGET_TYPES = ['orange', 'lemon', 'lime', 'tomato', 'capsicum', 'potato', 'pumpkin', 'garlic']
-
+TARGET_TYPES = [target.upper() for target in TARGET_TYPES]
 
 def estimate_pose(camera_matrix, obj_info, robot_pose):
     """
@@ -80,6 +79,9 @@ def merge_estimations(target_pose_dict):
     ######### Replace with your codes #########
     # TODO: replace it with a solution to merge the multiple occurrences of the same class type (e.g., by a distance threshold)
     target_est = target_pose_dict
+    
+
+    
     #########
    
     return target_est
