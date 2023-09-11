@@ -104,6 +104,18 @@ def merge_estimations(target_pose_dict):
     return estimations
 
 
+<<<<<<< HEAD
+=======
+    ######### Replace with your codes #########
+    # TODO: replace it with a solution to merge the multiple occurrences of the same class type (e.g., by a distance threshold)
+    target_est = target_pose_dict
+    
+
+    
+    #########
+   
+    return target_est
+>>>>>>> 0a5744e404fa54a4bdbcdd2bd97b8ce6ecd5feba
 
 
 # main loop
